@@ -1,0 +1,27 @@
+<script>
+
+export default {
+    name:   "404-not-found",
+    components:{
+        
+    },
+    data() {
+        return {
+            
+        }
+    },
+    methods:{
+        
+    },
+    created(){
+    }
+}
+</script>
+
+<template>
+    <h1>404 NOT FOUND</h1>
+</template>
+
+<style lang="scss" scoped>
+  
+</style>
