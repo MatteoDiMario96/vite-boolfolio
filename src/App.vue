@@ -49,18 +49,23 @@ export default {
 </script>
 
 <template>
-    <AppHeader/>
+    <div class="container">
+        <AppHeader/>
 
-    <AppMain
-    :projects="projects"
-    :currentPage="currentPage"
-    @update:currentPage="updatePage"
-    />
+        <AppMain
+        :projects="projects"
+        :currentPage="currentPage"
+        @update:currentPage="updatePage"
+        />
 
-    <AppFooter/>
-
+        <AppFooter/>
+    </div>
 </template>
 
 <style lang="scss">
-  @use './scss/general.scss'
+  @use './scss/general.scss';
+  
+  .container{
+    width: 800px;
+  }
 </style>
