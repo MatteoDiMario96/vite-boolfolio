@@ -31,8 +31,8 @@ export default {
 </script>
 
 <template>
-    <main>
-        <ul>
+    <main class="flex-centered">
+        <ul class="list-group ul-projects list-unstyled">
             <SingleProject v-for="project in projects"  :key="project.id"
             :name="project.name"
             :project_created_at="project.project_created_at"
@@ -41,11 +41,20 @@ export default {
             />
         </ul>
 
-        <a href="#" class="btn btn-primary" @click.prevent="changeCurrentPage()">Load More</a>
+        <a href="#" class="btn btn-primary w-100  mt-5" @click.prevent="changeCurrentPage()">Load More Results</a>
     </main>
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    .flex-centered{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
+    .ul-projects{
+        width: 100%;
+    }
 </style>
